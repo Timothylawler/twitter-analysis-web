@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda|News+Cycle:700');
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 120px;
+  padding: 20px;
+  color: white;
+	font-family: 'News Cycle', sans-serif;
+}
+.App-header > h2 {
+	font-size: 52px;
+	font-weight: 700;
+}
+
+.container{
+	margin-top: 8px;
+}
+
+.padding-lr-12{
+	
+}
+
+.step-menu-content{
+	font-family: 'Merienda', cursive;
+	color: #4c4c4c;
+	font-size: 18px;
+}
+
+.tweet-card{
+	padding: 12px;
+}
+
+/* MENU ANIMATION */
+
+.menuAnimation-enter{
+	opacity: 0.01;
+	height: 1px;
+}
+
+.menuAnimation-enter.menuAnimation-enter-active {
+	opacity: 1;
+	height: 100px;
+	transition: all 200ms ease-in;
+}
+
+.menuAnimation-leave{
+	height: 0px;
+}
+
+.menuAnimation-leave.menuAnimation-leave-active {
+  height: -1px;
+  transition: 500ms ease-out all;
+}
+
+/* /MENU ANIMATION */
+
+/* TWEET ANIMATION */
+.tweetAnimation-appear{
+	opacity: 0.1;
+}
+
+.tweetAnimation-appear.tweetAnimation-appear-active{
+	opacity: 1;
+	transition: all 400ms ease-in;
+}
+
+.tweetAnimation-leave{
+	opacity: 1;
+}
+
+.tweetAnimation-leave.tweetAnimation-leave-active{
+	opacity: 0.1;
+	transition: all 200ms ease-in;
+}
+
+/* /TWEET ANIMATION */
+
+.show-hide-fab{
+	position:relative;
+	bottom: -20px;
+}
+
+.margin-top-24{
+	margin-top:24px;
+}
+
+
+
+
+.App-logo{
+	position:absolute;
+	top: 22px;
+	left: 75px;
+	height: 75px;
+	width: auto;
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
